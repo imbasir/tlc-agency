@@ -1,12 +1,17 @@
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRoutes from "./AppRoutes";
+
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 
 function App() {
   return (
     <>
-      <Nav />
-
-      <Footer />
+      <Router>
+        <Nav />
+        <AppRoutes />
+        <Footer />
+      </Router>
     </>
   );
 }

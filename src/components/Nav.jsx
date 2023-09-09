@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -8,7 +9,7 @@ const Navbar = () => {
   return (
     <div>
       {/*  navbar goes here */}
-      <nav className="fixed z-10 top-0 w-full bg-gray-300 ">
+      <nav className="fixed  top-0 w-full bg-gray-100 ">
         <div className="max-w-7xl mx-auto ">
           <div className="flex justify-between ">
             <div className="flex space-x-4">
@@ -18,7 +19,7 @@ const Navbar = () => {
                   href="#"
                   className="flex items-center py-5 px-2 text-gray-700"
                 >
-                  <span className="font-bold text-2xl border-2 border-black p-5 rounded-full ">
+                  <span className="flex-wrap font-bold text-2xl border-2 border-black p-5 rounded-full ">
                     TLC
                   </span>
                 </a>
@@ -27,25 +28,28 @@ const Navbar = () => {
 
             {/* Secondary nav */}
 
-            <div className="hidden md:flex items-center space-x-1">
-              <a href="" className="py-5 px-3 font-bold">
+            <div className="px-3 hidden md:flex items-center space-x-1">
+              <Link to="/" className="py-5 px-3 text-normal font-bold">
                 Home
-              </a>
-              <a href="" className="py-5 px-3 font-bold">
+              </Link>
+              <Link to="/about" className="py-5 px-3 text-normal font-bold">
                 About us
-              </a>
-              <a href="" className="py-5 px-3 font-bold">
+              </Link>
+              <Link
+                to="/jobseekers"
+                className="py-5 px-3 text-normal font-bold"
+              >
                 Jobseekers
-              </a>
-              <a href="" className="py-5 px-3 font-bold">
+              </Link>
+              <Link to="/employers" className="py-5 px-3 text-normal font-bold">
                 Employers
-              </a>
-              <a
-                href=""
+              </Link>
+              <Link
+                to="/contact"
                 className="py-2 px-3 bg-gray-700 hover:bg-blue-700 text-white transition duration-500 rounded-full font-bold"
               >
                 Contact us
-              </a>
+              </Link>
             </div>
             {/* mobile responsive hamburger */}
             <div className="md:hidden flex items-center mr-2">
@@ -57,7 +61,7 @@ const Navbar = () => {
         </div>
 
         {/* mobile menu */}
-        <div className={navbarOpen ? " md:hidden " : " hidden "}>
+        <div className={navbarOpen ? " md:hidden  " : " hidden "}>
           <a
             href="#"
             className="border font-bold block py-2 px-4 text-sm hover:bg-gray-200"
