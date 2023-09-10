@@ -1,11 +1,12 @@
 import React from "react";
 import background from "../assets/images/test.jpg";
-import contentbg from "../assets/images/bg1.jpg";
+import contentbg from "../assets/images/bg2.jpg";
 import jobseekers from "../assets/images/icon1.png";
 import employers from "../assets/images/icon2.png";
 import news from "../assets/images/icon3.png";
 import contact from "../assets/images/icon4.png";
 import { HiPhone } from "react-icons/hi";
+import Slides from "./Slides";
 
 const Home = () => {
   const backgroundMain = {
@@ -43,8 +44,8 @@ const Home = () => {
       </div>
       {/* container content */}
       <div className="content-container max-w-7xl mx-auto py-20 px-5">
-        <div className="  gap-20 md:grid grid-cols-2">
-          <div className="">
+        <div className="  border md:grid grid-cols-2">
+          <div className="px-2 py-10">
             <h1 className="font-bold text-blue-700 text-3xl ">
               We are your staffing agency
             </h1>
@@ -64,14 +65,18 @@ const Home = () => {
                 your individual qualifications.
               </p>
             </div>
-            <button className="border border-black rounded-md hover:bg-blue-700 hover:text-white duration-500  flex py-1 px-1 items-center justify-center ">
-              Upload Resume
+            <button className=" py-2 px-2 bg-black hover:bg-blue-700 text-white transition duration-500 rounded-md font-bold">
+              Upload CV
             </button>
           </div>
-          <div className="mt-5 md:mt-0">
-            {/* bg content */}
-            <img src={contentbg} className="h-96 w-full" />
+
+          {/* bg content */}
+          <div className="">
+            <Slides />
           </div>
+          {/* <div className="mt-5 md:mt-0">
+            <img src={contentbg} className=" rounded-2xl h-96 w-full" />
+          </div> */}
         </div>
       </div>
 
@@ -80,21 +85,21 @@ const Home = () => {
       <div className="border bg-gray-100 my-10">jobs here</div>
 
       {/* icon-links */}
-      <div className=" ">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-4 place-items-center   space-y-10 py-7 text-xl text-center ">
-          <div className="">
+      <div className="  ">
+        <div className=" max-w-7xl mx-auto grid md:grid-cols-4  text-center justify-items-center text-xl py-10 ">
+          <div className="my-4 ">
             <img src={jobseekers} className="" />
             <p>Jobseekers</p>
           </div>
-          <div>
+          <div className=" my-4">
             <img src={employers} className="" />
             <p>Employers</p>
           </div>
-          <div>
+          <div className="my-4">
             <img src={news} className="" />
             <p>News</p>
           </div>
-          <div>
+          <div className=" my-4">
             <img src={contact} className="" />
             <p>Contact Us</p>
           </div>

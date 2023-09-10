@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div>
       {/*  navbar goes here */}
-      <nav className="fixed  top-0 w-full bg-gray-100 ">
+      <nav className="fixed  z-10 top-0 w-full bg-gray-100 ">
         <div className="max-w-7xl mx-auto ">
           <div className="flex justify-between ">
             <div className="flex space-x-4">
@@ -62,23 +62,29 @@ const Navbar = () => {
 
         {/* mobile menu */}
         <div className={navbarOpen ? " md:hidden  " : " hidden "}>
-          <a
-            href="#"
+          <Link
+            to="/"
             className="border font-bold block py-2 px-4 text-sm hover:bg-gray-200"
           >
             Home
+          </Link>
+          <Link
+            to="/about"
+            className="border font-bold block py-2 px-4 text-sm hover:bg-gray-200"
+          >
+            About Us
+          </Link>
+          <a
+            href="#"
+            className="border font-bold block py-2 px-4 text-sm hover:bg-gray-200"
+          >
+            Jobseekers
           </a>
           <a
             href="#"
             className="border font-bold block py-2 px-4 text-sm hover:bg-gray-200"
           >
-            About
-          </a>
-          <a
-            href="#"
-            className="border font-bold block py-2 px-4 text-sm hover:bg-gray-200"
-          >
-            Services
+            Employers
           </a>
           <a
             href="#"

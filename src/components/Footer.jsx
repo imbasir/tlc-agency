@@ -87,7 +87,7 @@ const Footer = () => {
         </div>
       </div>
       <span className="mt-14 text-xs place-items-end justify-center items-center flex bottom-0">
-        ©TLC staffing agency LLC Services 2023 - TIGS{" "}
+        ©TLC staffing Services 2023 - TIGS{" "}
         <CgCodeSlash size={14} className="mx-1" />
       </span>
     </div>
