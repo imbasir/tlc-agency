@@ -7,7 +7,7 @@ const Footer = () => {
   const style = { color: "black", fontSize: "1.5em" };
 
   return (
-    <div className="footer bg-gray-100  pt-8 px-8 ">
+    <div className="footer bg-gray-300  pt-8 px-8 ">
       <div className="container max-w-7xl mx-auto   ">
         <div className="row  px-5 md:grid grid-cols-3">
           {/* Company Links */}
@@ -69,17 +69,17 @@ const Footer = () => {
             <ul className="flex space-x-3 mt-1 ">
               <li>
                 <a href="#" className=" ">
-                  <FaFacebookF style={style} className="rounded-md" />
+                  <FaFacebookF style={style} className="rounded-full" />
                 </a>
               </li>
               <li>
                 <a href="#" className=" ">
-                  <FaInstagramSquare style={style} className="rounded-md" />
+                  <FaInstagramSquare style={style} className="rounded-full" />
                 </a>
               </li>
               <li>
                 <a href="#" className=" ">
-                  <FaTwitter style={style} className="rounded-md" />
+                  <FaTwitter style={style} className="rounded-full" />
                 </a>
               </li>
             </ul>

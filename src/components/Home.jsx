@@ -7,6 +7,7 @@ import news from "../assets/images/icon3.png";
 import contact from "../assets/images/icon4.png";
 import { HiPhone } from "react-icons/hi";
 import Slides from "./Slides";
+import Jobpost from "./Jobpost";
 
 const Home = () => {
   const backgroundMain = {
@@ -15,14 +16,14 @@ const Home = () => {
 
   return (
     <div>
-      <div className="border main-container pt-28 ">
+      <div className=" main-container pt-28 ">
         {/* bg main */}
         <div
           style={backgroundMain}
-          className="md:h-3/4 md:bg-center  bg-cover  bg-center  w-100% "
+          className=" md:h-3/4 md:bg-center  bg-cover bg-no-repeat lg:py-28  bg-center  w-100% "
         >
           <div className="  font-bold ">
-            <div className="lg:px-72 lg:py-36 px-2 py-16 ">
+            <div className="max-w-7xl md:mx-auto ml-1 py-10  ">
               <p className=" text-blue-700  text-normal">
                 Welcome to TLC staffing agency LLC
               </p>
@@ -43,8 +44,8 @@ const Home = () => {
         </div>
       </div>
       {/* container content */}
-      <div className="content-container max-w-7xl mx-auto py-20 px-5">
-        <div className="  border md:grid grid-cols-2">
+      <div className="content-container max-w-7xl mx-auto py-10 px-5">
+        <div className="   md:grid grid-cols-2">
           <div className="px-2 py-10">
             <h1 className="font-bold text-blue-700 text-3xl ">
               We are your staffing agency
@@ -82,11 +83,13 @@ const Home = () => {
 
       {/* jobs listing */}
 
-      <div className="border bg-gray-100 my-10">jobs here</div>
+      <div className="bg-gray-300 py-20">
+        <Jobpost className="py-10" />
+      </div>
 
       {/* icon-links */}
-      <div className="  ">
-        <div className=" max-w-7xl mx-auto grid md:grid-cols-4  text-center justify-items-center text-xl py-10 ">
+      <div className=" py-10 ">
+        <div className=" max-w-7xl mx-auto content grid md:grid-cols-4  text-center justify-items-center text-xl py-10 ">
           <div className="my-4 ">
             <img src={jobseekers} className="" />
             <p>Jobseekers</p>

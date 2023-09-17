@@ -5,20 +5,20 @@ import { RxDotFilled } from "react-icons/rx";
 const Sliides = () => {
   const slides = [
     {
-      url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
+      url: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fG51cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
     },
     {
-      url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
+      url: "https://media.istockphoto.com/id/1589933604/photo/asian-chinese-nurses-walking-in-hospital-corridor-on-the-move.webp?b=1&s=170667a&w=0&k=20&c=TrkEV2Dls78NztDgTnv6cmrd05HBWrIKz4N_E02oqpk=",
     },
     {
-      url: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
+      url: "https://media.istockphoto.com/id/1461280039/photo/smiling-young-asian-woman-nurse-wearing-blue-uniform-with-stethoscope-holding-hands-in.webp?b=1&s=170667a&w=0&k=20&c=-rbN1O7bGkBoGJKzHLHcOTvryjjJv9WrF9srlVqtwmc=",
     },
 
     {
-      url: "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
+      url: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG51cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
     },
     {
-      url: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
+      url: "https://media.istockphoto.com/id/1392605355/photo/senior-woman-in-hospital-bed.webp?b=1&s=170667a&w=0&k=20&c=b7H1m3ndxUWYIX4UISzEZ3JKgIhIHgAnf57RmEKvVdA=",
     },
   ];
 
@@ -41,11 +41,12 @@ const Sliides = () => {
   };
 
   return (
-    <div className="max-w-[1260px] h-[650px] md:h-[500px] sm:h-[200px] w-full m-auto py-10 px-4 relative group">
+    <div className="max-w-[1260px]  h-[420px] md:h-[450px]  w-full mx-auto pt-12 pb-20 relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+        className="w-full h-full   rounded-md bg-center md:bg-cover bg-contain bg-no-repeat duration-500"
       ></div>
+
       {/* Left Arrow */}
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
@@ -54,7 +55,7 @@ const Sliides = () => {
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
-      <div className="flex top-4 justify-center py-2">
+      <div className="flex top-4 justify-center mt-6">
         {slides.map((slide, slideIndex) => (
           <div
             key={slideIndex}
