@@ -15,12 +15,12 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <div className=" main-container pt-28 ">
+    <div className="w-100% border">
+      <div className=" main-container  pt-28 ">
         {/* bg main */}
         <div
           style={backgroundMain}
-          className=" md:h-3/4 md:bg-center  bg-cover bg-no-repeat lg:py-28  bg-center  w-100% "
+          className=" md:h-3/4 md:bg-center  bg-cover bg-no-repeat lg:py-28 bg-cover bg-center  w-100% "
         >
           <div className="  font-bold ">
             <div className="max-w-7xl md:mx-auto ml-1 py-10  ">
@@ -44,7 +44,7 @@ const Home = () => {
         </div>
       </div>
       {/* container content */}
-      <div className="content-container max-w-7xl mx-auto py-10 px-5">
+      <div className="content-container max-w-7xl mx-auto py-10 ">
         <div className="   md:grid grid-cols-2">
           <div className="px-2 py-10">
             <h1 className="font-bold text-blue-700 text-3xl ">
@@ -83,7 +83,7 @@ const Home = () => {
 
       {/* jobs listing */}
 
-      <div className="bg-gray-300 py-20">
+      <div className="bg-gray-300 py-20 px-1">
         <Jobpost className="py-10" />
       </div>
 

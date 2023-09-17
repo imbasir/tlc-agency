@@ -29,7 +29,10 @@ const Navbar = () => {
             {/* Secondary nav */}
 
             <div className="px-3 hidden md:flex items-center space-x-1">
-              <Link to="/" className="py-5 px-3 text-normal font-bold">
+              <Link
+                to="/"
+                className="py-2 px-3 bg-gray-700 hover:bg-blue-700 text-white transition duration-500 rounded-full font-bold"
+              >
                 Home
               </Link>
               <Link to="/about" className="py-5 px-3 text-normal font-bold">
