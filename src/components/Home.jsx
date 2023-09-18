@@ -15,8 +15,8 @@ const Home = () => {
   };
 
   return (
-    <div className="w-100% border">
-      <div className=" main-container  pt-28 ">
+    <div id="logo" className="w-100% border">
+      <div className=" main-container  pt-24 ">
         {/* bg main */}
         <div
           style={backgroundMain}
@@ -24,7 +24,7 @@ const Home = () => {
         >
           <div className="  font-bold ">
             <div className="max-w-7xl md:mx-auto ml-1 py-10  ">
-              <p className=" text-blue-700  text-normal">
+              <p className=" text-blue-700  text-xl">
                 Welcome to TLC staffing agency LLC
               </p>
               <p className=" text-5xl">Trust Us! We </p>

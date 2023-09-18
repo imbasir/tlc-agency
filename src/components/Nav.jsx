@@ -2,51 +2,49 @@ import React from "react";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import { AiOutlineClose } from "react-icons/ai";
+import company from "../assets/images/company.png";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-
+  /*   const Logo = {
+    backgroundImage: `url(${company})`,
+  }; */
   return (
     <div>
       {/*  navbar goes here */}
-      <nav className="fixed  z-10 top-0 w-full bg-gray-300 ">
+      <nav className="shadow-md fixed  z-10 top-0 w-full bg-white">
         <div className="max-w-7xl mx-auto ">
           <div className="flex justify-between ">
-            <div className="flex space-x-4">
+            <div className="  self-center mr-2">
               {/* Logo */}
-              <div>
-                <a
-                  href="#"
-                  className="flex items-center py-5 px-2 text-gray-700"
-                >
-                  <span className="flex-wrap font-bold text-2xl border-2 border-black p-5 rounded-full ">
-                    TLC
-                  </span>
-                </a>
-              </div>
+              <a href="#logo" className="flex items-center">
+                <img
+                  src={company}
+                  className="w-[95px] h-[95px] bg-no-repeat  "
+                  alt="TLC logo"
+                />
+                <span className=" self-center text-1xl font-semibold whitespace-nowrap">
+                  STAFFING
+                  <br />
+                  AGENCY
+                </span>
+              </a>
             </div>
 
             {/* Secondary nav */}
 
-            <div className="px-3 hidden md:flex items-center space-x-1">
-              <Link
-                to="/"
-                className="py-2 px-3 bg-gray-700 hover:bg-blue-700 text-white transition duration-500 rounded-full font-bold"
-              >
+            <div className="px-3 hidden text-blue-600 md:flex items-center space-x-8">
+              <Link to="/" className="py-5 px-3 text-normal font-bold">
                 Home
               </Link>
               <Link to="/about" className="py-5 px-3 text-normal font-bold">
-                About us
+                About
               </Link>
-              <Link
-                to="/jobseekers"
-                className="py-5 px-3 text-normal font-bold"
-              >
-                Jobseekers
+              <Link to="/services" className="py-5 px-3 text-normal font-bold">
+                Services
               </Link>
-              <Link to="/employers" className="py-5 px-3 text-normal font-bold">
-                Employers
-              </Link>
+
               <Link
                 to="/contact"
                 className="py-2 px-3 bg-gray-700 hover:bg-blue-700 text-white transition duration-500 rounded-full font-bold"
@@ -55,9 +53,13 @@ const Navbar = () => {
               </Link>
             </div>
             {/* mobile responsive hamburger */}
-            <div className="md:hidden  flex items-center mr-2">
+            <div className="transition-all ease-in-out duration-300 md:hidden flex items-center mr-2">
               <button onClick={() => setNavbarOpen(!navbarOpen)}>
-                <GiHamburgerMenu size={23} />
+                {navbarOpen ? (
+                  <AiOutlineClose size={23} />
+                ) : (
+                  <GiHamburgerMenu size={23} />
+                )}
               </button>
             </div>
           </div>
@@ -65,38 +67,34 @@ const Navbar = () => {
 
         {/* mobile menu */}
         <div
-          className={navbarOpen ? " md:hidden bg-white border  " : " hidden "}
+          className={`border-y text-center transition-all delay-300 duration-300 ease-in-out ${
+            navbarOpen ? "opacity-100 md:hidden " : "opacity-0 hidden "
+          }`}
         >
-          <Link
-            to="/"
-            className="font-bold block py-2 px-4 text-sm hover:bg-gray-200"
+          <a
+            href="/"
+            className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             Home
-          </Link>
-          <Link
-            to="/about"
-            className="font-bold block py-2 px-4 text-sm hover:bg-gray-200"
+          </a>
+          <a
+            href="/about"
+            className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             About Us
-          </Link>
-          <a
-            href="#"
-            className="font-bold block py-2 px-4 text-sm hover:bg-gray-200"
-          >
-            Jobseekers
           </a>
           <a
-            href="#"
-            className="font-bold block py-2 px-4 text-sm hover:bg-gray-200"
+            href="/services"
+            className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
-            Employers
+            Services
           </a>
-          <Link
-            to="/contact"
-            className="font-bold block py-2 px-4 text-sm hover:bg-gray-200"
+          <a
+            href="/contact"
+            className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             Contact Us
-          </Link>
+          </a>
         </div>
       </nav>
     </div>

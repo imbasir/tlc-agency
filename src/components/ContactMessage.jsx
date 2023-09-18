@@ -49,11 +49,13 @@ const ContactMessage = () => {
               they can respond to my inquiry.
             </p>
           </div>
-          <input
-            type="submit"
-            value="Submit"
-            className="w-full mt-6 bg-blue-600 rounded-md hover:bg-blue-500 text-white font-semibold p-3"
-          />
+          <div className=" ">
+            <input
+              type="submit"
+              value="Submit"
+              className="w-full mt-6 bg-blue-600 rounded-md hover:bg-blue-500 text-white font-semibold p-3"
+            />
+          </div>
         </form>
       </div>
     </div>

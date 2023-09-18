@@ -4,7 +4,7 @@ import { HiLocationMarker, HiMail, HiPhone } from "react-icons/hi";
 import { CgCodeSlash } from "react-icons/cg";
 
 const Footer = () => {
-  const style = { color: "black", fontSize: "1.5em" };
+  const style = { fontSize: "1.5em" };
 
   return (
     <div className="footer bg-gray-300  pt-8 px-2 ">
@@ -42,21 +42,24 @@ const Footer = () => {
           <div className="col  py-3 px-1 mx-auto ">
             <h4 className="font-bold text-md">Contact Us</h4>
             <ul className="">
-              <li>
-                <a href="#" className=" flex items-center">
-                  <HiLocationMarker style={style} className="my-22 mr-2" />
+              <li className="">
+                <a href="#" className=" flex items-center ">
+                  <HiLocationMarker
+                    style={style}
+                    className="text-blue-600 my-22 mr-2"
+                  />
                   <span>8523 Lindley Ave Northrige CA. 91325</span>
                 </a>
               </li>
-              <li>
-                <a href="#" className="flex items-center">
-                  <HiPhone style={style} className="my-2 mr-2" />
+              <li className="">
+                <a href="#" className="flex items-center ">
+                  <HiPhone style={style} className="text-blue-600 my-2 mr-2" />
                   <span>+123 456 789</span>
                 </a>
               </li>
-              <li>
-                <a href="#" className="flex items-center">
-                  <HiMail style={style} className="my-2 mr-2" />
+              <li className="">
+                <a href="#" className="flex items-center ">
+                  <HiMail style={style} className="text-blue-600 my-2 mr-2" />
                   <span>Business@gmail.com</span>
                 </a>
               </li>
@@ -67,19 +70,19 @@ const Footer = () => {
           <div className="col  py-3 px-1 mx-auto ">
             <h4 className="font-bold text-md">Follow Us</h4>
             <ul className="flex space-x-3 mt-1 ">
-              <li>
+              <li className="border bg-white rounded-3xl p-2">
                 <a href="#" className=" ">
-                  <FaFacebookF style={style} className="rounded-full" />
+                  <FaFacebookF style={style} className="text-blue-600" />
                 </a>
               </li>
-              <li>
+              <li className="border bg-white rounded-3xl p-2">
                 <a href="#" className=" ">
-                  <FaInstagramSquare style={style} className="rounded-full" />
+                  <FaInstagramSquare style={style} className="text-blue-600" />
                 </a>
               </li>
-              <li>
+              <li className="border bg-white rounded-3xl p-2">
                 <a href="#" className=" ">
-                  <FaTwitter style={style} className="rounded-full" />
+                  <FaTwitter style={style} className="text-blue-600" />
                 </a>
               </li>
             </ul>

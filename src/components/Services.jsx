@@ -1,7 +1,7 @@
 import React from "react";
 import Background from "../assets/images/test.jpg";
 
-const About = () => {
+const Services = () => {
   const mainBg = {
     backgroundImage: `url(${Background})`,
   };
@@ -16,9 +16,11 @@ const About = () => {
         ></div>
       </div>
       {/* content services */}
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-center text-4xl text-blue-600 font-bold">
+          Services
+        </h1>
         <div className="text-2xl font-bold text-blue-600 text-center">
-          <h1>About</h1>
           <h1>TLC staffing agency</h1>
         </div>
         <div>
@@ -37,4 +39,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Services;
