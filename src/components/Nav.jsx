@@ -75,28 +75,28 @@ const Navbar = () => {
         >
           <Link
             to="/"
-            onClick={() => (this.setNavbarOpen = false)}
+            {/* onClick={() => (this.setNavbarOpen = false)} */}
             className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             Home
           </Link>
           <Link
             to="/about"
-            onClick={() => (this.setNavbarOpen = false)}
+            {/* onClick={() => (this.setNavbarOpen = false)} */}
             className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             About Us
           </Link>
           <Link
             to="/services"
-            onClick={() => (this.setNavbarOpen = false)}
+            {/* onClick={() => (this.setNavbarOpen = false)} */}
             className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             Services
           </Link>
           <Link
             to="/contact"
-            onClick={() => (this.setNavbarOpen = false)}
+            {/* onClick={() => (this.setNavbarOpen = false)} */}
             className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             Contact Us
