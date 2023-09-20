@@ -45,7 +45,6 @@ const Navbar = () => {
               <Link to="/services" className="py-5 px-3 text-normal font-bold">
                 Services
               </Link>
-
               <Link
                 to="/contact"
                 className="py-2 px-3 bg-gray-700 hover:bg-blue-700 text-white transition duration-500 rounded-full font-bold"
@@ -75,28 +74,28 @@ const Navbar = () => {
         >
           <Link
             to="/"
-            onClick={() => (this.setNavbarOpen = false)}
+            /* onClick={() => (this.setNavbarOpen = false)} */
             className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             Home
           </Link>
           <Link
             to="/about"
-            onClick={() => (this.setNavbarOpen = false)}
+            /* onClick={() => (this.setNavbarOpen = false)} */
             className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             About Us
           </Link>
           <Link
             to="/services"
-            onClick={() => (this.setNavbarOpen = false)}
+            /* onClick={() => (this.setNavbarOpen = false)} */
             className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             Services
           </Link>
           <Link
             to="/contact"
-            onClick={() => (this.setNavbarOpen = false)}
+            /* onClick={() => (this.setNavbarOpen = false)} */
             className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             Contact Us
