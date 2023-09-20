@@ -7,6 +7,7 @@ import company from "../assets/images/company.png";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+
   /*   const Logo = {
     backgroundImage: `url(${company})`,
   }; */
@@ -52,13 +53,14 @@ const Navbar = () => {
                 Contact us
               </Link>
             </div>
+
             {/* mobile responsive hamburger */}
             <div className="transition-all ease-in-out duration-300 md:hidden flex items-center mr-2">
               <button onClick={() => setNavbarOpen(!navbarOpen)}>
-                {navbarOpen ? (
-                  <AiOutlineClose size={23} />
-                ) : (
+                {!navbarOpen ? (
                   <GiHamburgerMenu size={23} />
+                ) : (
+                  <AiOutlineClose size={23} />
                 )}
               </button>
             </div>
@@ -67,34 +69,38 @@ const Navbar = () => {
 
         {/* mobile menu */}
         <div
-          className={`border-y text-center transition-all delay-300 duration-300 ease-in-out ${
+          className={`border-y text-center transition-all delay-300 duration-300 ease-in-out  ${
             navbarOpen ? "opacity-100 md:hidden " : "opacity-0 hidden "
           }`}
         >
-          <a
-            href="/"
+          <Link
+            to="/"
+            onClick={() => (this.setNavbarOpen = false)}
             className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             Home
-          </a>
-          <a
-            href="/about"
+          </Link>
+          <Link
+            to="/about"
+            onClick={() => (this.setNavbarOpen = false)}
             className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             About Us
-          </a>
-          <a
-            href="/services"
+          </Link>
+          <Link
+            to="/services"
+            onClick={() => (this.setNavbarOpen = false)}
             className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             Services
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            to="/contact"
+            onClick={() => (this.setNavbarOpen = false)}
             className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </nav>
     </div>

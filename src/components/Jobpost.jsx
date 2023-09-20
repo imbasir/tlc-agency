@@ -69,7 +69,7 @@ const Jobpost = () => {
             <h5>Salary: Salary Negotiable</h5>
             <h5>Location: California</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas</p>
-            <button className=" py-1.5 px-3 bg-black hover:bg-blue-700 text-white transition duration-500 rounded-md ">
+            <button className=" py-1.5 px-3 bg-blue-700 text-white transition duration-500 rounded-md ">
               Apply Now
             </button>
           </div>
@@ -88,7 +88,7 @@ const Jobpost = () => {
             <h5>Salary: Salary Negotiable</h5>
             <h5>Location: California</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas</p>
-            <button className=" py-1.5 px-3 bg-black hover:bg-blue-700 text-white transition duration-500 rounded-md ">
+            <button className=" py-1.5 px-3 bg-blue-700 text-white transition duration-500 rounded-md ">
               Apply Now
             </button>
           </div>
@@ -109,7 +109,7 @@ const Jobpost = () => {
             <p className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
             </p>
-            <button className="  py-1.5 px-3 bg-black hover:bg-blue-700 text-white transition duration-500 rounded-md ">
+            <button className="  py-1.5 px-3 bg-blue-700 text-white transition duration-500 rounded-md ">
               Apply Now
             </button>
           </div>
@@ -128,7 +128,7 @@ const Jobpost = () => {
             <h5>Salary: Salary Negotiable</h5>
             <h5>Location: California</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas</p>
-            <button className=" py-1.5 px-3 bg-black hover:bg-blue-700 text-white transition duration-500 rounded-md ">
+            <button className=" py-1.5 px-3 bg-blue-700 text-white transition duration-500 rounded-md ">
               Apply Now
             </button>
           </div>

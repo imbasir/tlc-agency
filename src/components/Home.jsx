@@ -66,8 +66,8 @@ const Home = () => {
                 your individual qualifications.
               </p>
             </div>
-            <button className=" py-2 px-2 bg-black hover:bg-blue-700 text-white transition duration-500 rounded-md font-bold">
-              Upload CV
+            <button className=" py-2 px-2 bg-blue-700 text-white transition duration-500 rounded-md font-bold">
+              About Us
             </button>
           </div>
 
