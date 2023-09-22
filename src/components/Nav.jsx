@@ -95,7 +95,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/contact"
-            /* onClick={() => (this.setNavbarOpen = false)} */
+            onClick={() => (this.setNavbarOpen = false)}
             className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
           >
             Contact Us

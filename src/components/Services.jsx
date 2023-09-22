@@ -1,6 +1,11 @@
 import React from "react";
 import Background from "../assets/images/test.jpg";
-import Automotive from "../assets/images/work.jpg";
+import Automotive from "../assets/images/automotive.jpg";
+import Construction from "../assets/images/construction.jpg";
+import Healthcare from "../assets/images/healthcare.jpg";
+import Hospitality from "../assets/images/hospitality.jpg";
+import Retail from "../assets/images/retail.jpg";
+import Admin from "../assets/images/admin.jpg";
 import { BsArrowRightShort } from "react-icons/bs";
 
 const Services = () => {
@@ -14,21 +19,21 @@ const Services = () => {
         {/* background  */}
         <div
           style={mainBg}
-          className="bg-cover bg-center py-40 md:py-42 lg:py-72 w-100% "
+          className="bg-cover bg-center py-40 md:py-42 lg:py-72 w-100% h-5/6 "
         >
-          <h1 className="text-blue-600 text-center font-bold text-4xl py-10 ">
+          <h1 className="text-blacl text-center font-bold text-6xl py-10 ">
             Our Services
           </h1>
         </div>
       </div>
       {/* content services */}
-      <div className="max-w-7xl mx-auto ">
-        <div className="text-start ml-2 md:text-center leading-8">
-          <div className="text-4xl font-bold text-blue-600 ">
-            <h1>TLC staffing agency</h1>
+      <div className="max-w-7xl mx-auto w-100% ">
+        <div className="text-start ml-2  py-20">
+          <div className="font-bold text-3xl md:text-5xl mb-10">
+            <h1>TLC Staffing Agency</h1>
           </div>
           <div>
-            <p className="font-normal my-4 max-w-5xl mx-auto ">
+            <p className="max-[479px]:text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               accusamus placeat saepe, magni aspernatur deleniti repudiandae
               odit exercitationem quas possimus doloremque ex rem inventore
@@ -46,10 +51,10 @@ const Services = () => {
         </div>
 
         {/* Featured content */}
-        <div className="py-10">
+        <div className="py-12">
           <div className="md:text-center">
             <h1 className="text-xl font-bold text-blue-600">FEATURED</h1>
-            <h1 className="text-4xl font-bold pb-7 ">
+            <h1 className="font-bold text-3xl md:text-5xl pb-7 ">
               The industries covered <br />
               include the following:
             </h1>
@@ -82,7 +87,7 @@ const Services = () => {
 
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4">
               <a href="#">
-                <img className="rounded-t-lg" src={Background} alt="" />
+                <img className="rounded-t-lg" src={Admin} alt="" />
               </a>
               <div className="p-5">
                 <a href="#">
@@ -105,7 +110,7 @@ const Services = () => {
 
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4">
               <a href="#">
-                <img className="rounded-t-lg" src={Automotive} alt="" />
+                <img className="rounded-t-lg" src={Hospitality} alt="" />
               </a>
               <div className="p-5">
                 <a href="#">
@@ -128,7 +133,7 @@ const Services = () => {
 
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4">
               <a href="#">
-                <img className="rounded-t-lg" src={Automotive} alt="" />
+                <img className="rounded-t-lg" src={Healthcare} alt="" />
               </a>
               <div className="p-5">
                 <a href="#">
@@ -149,9 +154,13 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4">
+            <div className="max-w-sm  bg-white border border-gray-200 rounded-lg shadow  my-4">
               <a href="#">
-                <img className="rounded-t-lg" src={Automotive} alt="" />
+                <img
+                  className="rounded-t-lg h-[255px] w-100%"
+                  src={Construction}
+                  alt=""
+                />
               </a>
               <div className="p-5">
                 <a href="#">
@@ -174,7 +183,7 @@ const Services = () => {
 
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4">
               <a href="#">
-                <img className="rounded-t-lg" src={Automotive} alt="" />
+                <img className="rounded-t-lg" src={Retail} alt="" />
               </a>
               <div className="p-5">
                 <a href="#">

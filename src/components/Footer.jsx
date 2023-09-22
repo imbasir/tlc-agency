@@ -7,7 +7,7 @@ const Footer = () => {
   const style = { fontSize: "1.5em" };
 
   return (
-    <div className="footer bg-gray-300  pt-8 px-2 ">
+    <div className="footer bg-gray-800 text-white  pt-8 px-2 ">
       <div className="container max-w-7xl mx-auto   ">
         <div className="row  px-5 md:grid grid-cols-3">
           {/* Company Links */}

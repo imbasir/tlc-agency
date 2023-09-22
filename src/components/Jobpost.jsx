@@ -3,8 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import post1 from "../assets/images/nurse.jpg";
+import nurse from "../assets/images/nurse3.jpg";
 import hiring1 from "../assets/images/jobpost1.jpg";
-import hiring2 from "../assets/images/jobpost2.jpg";
+import nurse2 from "../assets/images/nurse2.jpg";
 
 function Arrow(props) {
   const { className, style, onClick } = props;
@@ -51,7 +52,7 @@ const Jobpost = () => {
 
   return (
     <div className="container max-w-7xl mx-auto">
-      <h1 className="mx-2 text-xl font-bold text-blue-600">
+      <h1 className="mx-2 md:text-3xl text-2xl font-bold ">
         What we are Looking for:
       </h1>
       <Slider {...settings}>
@@ -77,7 +78,7 @@ const Jobpost = () => {
         <div className="card border ">
           <img
             style={{ width: "100%", maxHeight: "200px", objectFit: "cover" }}
-            src={post1}
+            src={nurse2}
             alt=""
             className="w-100 "
           />
@@ -117,7 +118,7 @@ const Jobpost = () => {
         <div className="card border ">
           <img
             style={{ width: "100%", maxHeight: "200px", objectFit: "cover" }}
-            src={post1}
+            src={nurse}
             alt=""
             className="w-100 "
           />

@@ -15,39 +15,39 @@ const Home = () => {
   };
 
   return (
-    <div id="logo" className="w-100% border">
-      <div className=" main-container  pt-24 ">
-        {/* bg main */}
+    <div id="logo" className="">
+      <div className="py-12 ">
+        {/* background  */}
         <div
           style={backgroundMain}
-          className=" md:h-3/4 md:bg-center  bg-cover bg-no-repeat lg:py-28 bg-cover bg-center  w-100% "
+          className="bg-cover bg-center py-40 md:py-42 lg:py-72 w-100% h-5/6 "
         >
-          <div className="  font-bold ">
-            <div className="max-w-7xl md:mx-auto ml-1 py-10  ">
-              <p className=" text-blue-700  text-xl">
-                Welcome to TLC staffing agency LLC
-              </p>
-              <p className=" text-5xl">Trust Us! We </p>
-              <p className="text-5xl">Will Build Your</p>
-              <p className="text-5xl">Success</p>
-              <div className="flex space-x-2 ">
-                <button className=" py-1 px-1 bg-black hover:bg-blue-700 text-white transition duration-500 rounded-md font-bold">
-                  Apply Now!
-                </button>
-                <button className="border border-black rounded-md hover:bg-blue-700 hover:text-white duration-500  flex py-1 px-1 items-center justify-center">
-                  <HiPhone />
-                  <span className="px-1 py-1">Contact Us</span>
-                </button>
-              </div>
+          <div className="max-w-5xl md:mx-auto m-2 font-bold">
+            <p className=" text-blue-700  text-2sm md:text-xl">
+              Welcome to TLC staffing agency LLC
+            </p>
+            <p className=" text-3xl md:text-5xl">Trust Us! We </p>
+            <p className="text-3xl md:text-5xl">Will Build Your</p>
+            <p className="text-3xl md:text-5xl">Success</p>
+            <div className="flex space-x-2 ">
+              <button className=" py-1 px-1 bg-black hover:bg-blue-700 text-white transition duration-500 rounded-md font-bold">
+                Apply Now!
+              </button>
+              <button className="border border-black rounded-md hover:bg-blue-700 hover:text-white duration-500  flex py-1 px-1 items-center justify-center">
+                <HiPhone />
+                <span className="px-1 py-1">Contact Us</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
+
       {/* container content */}
+
       <div className="content-container max-w-7xl mx-auto py-10 ">
         <div className="   md:grid grid-cols-2">
           <div className="px-2 py-10">
-            <h1 className="font-bold text-blue-700 text-3xl ">
+            <h1 className="font-bold  text-2xl md:text-3xl">
               We are your staffing agency
             </h1>
             <div className="text-normal">
