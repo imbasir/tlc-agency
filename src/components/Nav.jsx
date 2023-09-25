@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div>
       {/*  navbar goes here */}
-      <nav className="shadow-md fixed  z-10 top-0 w-full bg-white">
+      <nav className="shadow-md fixed z-10 top-0 w-screen bg-white">
         <div className="max-w-7xl mx-auto ">
           <div className="flex justify-between ">
             <div className="  self-center mr-2">
@@ -54,7 +54,7 @@ const Navbar = () => {
             </div>
 
             {/* mobile responsive hamburger */}
-            <div className="transition-all ease-in-out duration-300 md:hidden flex items-center mr-2">
+            <div className=" transition-all ease-in-out duration-300 md:hidden flex items-center mr-4">
               <button onClick={() => setNavbarOpen(!navbarOpen)}>
                 {!navbarOpen ? (
                   <GiHamburgerMenu size={23} />
@@ -68,35 +68,35 @@ const Navbar = () => {
 
         {/* mobile menu */}
         <div
-          className={`border-y text-center transition-all delay-300 duration-300 ease-in-out  ${
+          className={`border-y bg-gray-100 text-center transition-all delay-300 duration-300 ease-in-out  ${
             navbarOpen ? "opacity-100 md:hidden " : "opacity-0 hidden "
           }`}
         >
           <Link
             to="/"
             /* onClick={() => (this.setNavbarOpen = false)} */
-            className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
+            className="font-bold block py-5 px-4 text-sm hover:bg-gray-200"
           >
             Home
           </Link>
           <Link
             to="/about"
             /* onClick={() => (this.setNavbarOpen = false)} */
-            className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
+            className="font-bold block py-5 px-4 text-sm hover:bg-gray-200"
           >
             About Us
           </Link>
           <Link
             to="/services"
             /* onClick={() => (this.setNavbarOpen = false)} */
-            className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
+            className="font-bold block py-5 px-4 text-sm hover:bg-gray-200"
           >
             Services
           </Link>
           <Link
             to="/contact"
-            onClick={() => (this.setNavbarOpen = false)}
-            className="font-bold block py-4 px-4 text-sm hover:bg-gray-200"
+            /* onClick={() => (this.setNavbarOpen = false)} */
+            className="font-bold block py-5 px-4 text-sm hover:bg-gray-200"
           >
             Contact Us
           </Link>

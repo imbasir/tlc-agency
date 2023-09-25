@@ -31,8 +31,18 @@ const About = () => {
               <div className="flex items-stretch max-[991px]:min-h-[auto] max-[991px]:w-full max-[991px]:flex-col grid-cols-1 lg:grid-cols-[65%_30%] gap-8 lg:gap-20">
                 <div className="flex-col flex-1 flex justify-center gap-8">
                   <div className="flex-col flex gap-8">
-                    <h2 className="font-bold text-3xl md:text-5xl">About us</h2>
-                    <p className="max-[479px]:text-sm">
+                    <h2
+                      data-aos="zoom-out"
+                      data-aos-duration="2000"
+                      className="font-bold text-3xl md:text-5xl"
+                    >
+                      About us
+                    </h2>
+                    <p
+                      data-aos="slide-right"
+                      data-aos-duration="2000"
+                      className="max-[479px]:text-sm"
+                    >
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Proin fermentum leo vel orci. Dui faucibus in
@@ -56,7 +66,11 @@ const About = () => {
                   </div>
                   <div className="mb-8 mt-8 h-px w-full bg-black"></div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4">
-                    <div className="flex-col flex w-full items-start justify-between gap-4 border border-solid bg-[#f2f2f7] rounded-md p-6 md:p-4">
+                    <div
+                      data-aos="slide-up"
+                      data-aos-duration="2000"
+                      className="flex-col flex w-full items-start justify-between gap-4 border border-solid bg-[#f2f2f7] rounded-md p-6 md:p-4"
+                    >
                       <div className="text-sm sm:text-sm">
                         I have been using the Business Solution services for the
                         past year, and I am extremely satisfied with the
@@ -80,91 +94,20 @@ const About = () => {
                             5.0
                           </p>
                           <div className="flex text-[#f6ad1b]">
-                            <div className="flex-col flex h-4 w-4 items-center justify-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                className=""
-                                width="100%"
-                                height="100%"
-                                preserveAspectRatio="xMidYMid meet"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  fill="currentColor"
-                                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                                ></path>
-                              </svg>
-                            </div>
-                            <div className="flex-col flex h-4 w-4 items-center justify-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                className=""
-                                width="100%"
-                                height="100%"
-                                preserveAspectRatio="xMidYMid meet"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  fill="currentColor"
-                                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                                ></path>
-                              </svg>
-                            </div>
-                            <div className="flex-col flex h-4 w-4 items-center justify-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                className=""
-                                width="100%"
-                                height="100%"
-                                preserveAspectRatio="xMidYMid meet"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  fill="currentColor"
-                                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                                ></path>
-                              </svg>
-                            </div>
-                            <div className="flex-col flex h-4 w-4 items-center justify-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                className=""
-                                width="100%"
-                                height="100%"
-                                preserveAspectRatio="xMidYMid meet"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  fill="currentColor"
-                                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                                ></path>
-                              </svg>
-                            </div>
-                            <div className="flex-col flex h-4 w-4 items-center justify-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                className=""
-                                width="100%"
-                                height="100%"
-                                preserveAspectRatio="xMidYMid meet"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  fill="currentColor"
-                                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                                ></path>
-                              </svg>
-                            </div>
+                            <div className="flex-col flex h-4 w-4 items-center justify-center"></div>
+                            <div className="flex-col flex h-4 w-4 items-center justify-center"></div>
+                            <div className="flex-col flex h-4 w-4 items-center justify-center"></div>
+                            <div className="flex-col flex h-4 w-4 items-center justify-center"></div>
+                            <div className="flex-col flex h-4 w-4 items-center justify-center"></div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div className="flex-col flex w-full items-start justify-between gap-4 border border-solid bg-[#f2f2f7] rounded-md p-6 md:p-4">
+                    <div
+                      data-aos="slide-down"
+                      data-aos-duration="2000"
+                      className="flex-col flex w-full items-start justify-between gap-4 border border-solid bg-[#f2f2f7] rounded-md p-6 md:p-4"
+                    >
                       <div className="text-sm sm:text-sm">
                         I have been using the Business Solution services for the
                         past year, and I am extremely satisfied with the
@@ -188,86 +131,11 @@ const About = () => {
                             5.0
                           </p>
                           <div className="flex text-[#f6ad1b]">
-                            <div className="flex-col flex h-4 w-4 items-center justify-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                className=""
-                                width="100%"
-                                height="100%"
-                                preserveAspectRatio="xMidYMid meet"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  fill="currentColor"
-                                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                                ></path>
-                              </svg>
-                            </div>
-                            <div className="flex-col flex h-4 w-4 items-center justify-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                className=""
-                                width="100%"
-                                height="100%"
-                                preserveAspectRatio="xMidYMid meet"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  fill="currentColor"
-                                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                                ></path>
-                              </svg>
-                            </div>
-                            <div className="flex-col flex h-4 w-4 items-center justify-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                className=""
-                                width="100%"
-                                height="100%"
-                                preserveAspectRatio="xMidYMid meet"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  fill="currentColor"
-                                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                                ></path>
-                              </svg>
-                            </div>
-                            <div className="flex-col flex h-4 w-4 items-center justify-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                className=""
-                                width="100%"
-                                height="100%"
-                                preserveAspectRatio="xMidYMid meet"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  fill="currentColor"
-                                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                                ></path>
-                              </svg>
-                            </div>
-                            <div className="flex-col flex h-4 w-4 items-center justify-center">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                className=""
-                                width="100%"
-                                height="100%"
-                                preserveAspectRatio="xMidYMid meet"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  fill="currentColor"
-                                  d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"
-                                ></path>
-                              </svg>
-                            </div>
+                            <div className="flex-col flex h-4 w-4 items-center justify-center"></div>
+                            <div className="flex-col flex h-4 w-4 items-center justify-center"></div>
+                            <div className="flex-col flex h-4 w-4 items-center justify-center"></div>
+                            <div className="flex-col flex h-4 w-4 items-center justify-center"></div>
+                            <div className="flex-col flex h-4 w-4 items-center justify-center"></div>
                           </div>
                         </div>
                       </div>

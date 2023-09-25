@@ -8,8 +8,11 @@ import contact from "../assets/images/icon4.png";
 import { HiPhone } from "react-icons/hi";
 import Slides from "./Slides";
 import Jobpost from "./Jobpost";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  AOS.init();
   const backgroundMain = {
     backgroundImage: `url(${background})`,
   };
@@ -20,9 +23,13 @@ const Home = () => {
         {/* background  */}
         <div
           style={backgroundMain}
-          className="bg-cover bg-center py-40 md:py-42 lg:py-72 w-100% h-5/6 "
+          className="bg-cover bg-center py-40 md:py-42 lg:py-72 w-100% h-5/6"
         >
-          <div className="max-w-5xl md:mx-auto m-2 font-bold">
+          <div
+            data-aos="zoom-out"
+            data-aos-duration="2000"
+            className="max-w-5xl md:mx-auto m-2 font-bold"
+          >
             <p className=" text-blue-700  text-2sm md:text-xl">
               Welcome to TLC staffing agency LLC
             </p>
@@ -47,10 +54,18 @@ const Home = () => {
       <div className="content-container max-w-7xl mx-auto py-10 ">
         <div className="   md:grid grid-cols-2">
           <div className="px-2 py-10">
-            <h1 className="font-bold  text-2xl md:text-3xl">
+            <h1
+              data-aos="slide-up"
+              data-aos-duration="2000"
+              className="font-bold  text-2xl md:text-3xl"
+            >
               We are your staffing agency
             </h1>
-            <div className="text-normal">
+            <div
+              data-aos="slide-up"
+              data-aos-duration="2000"
+              className="text-normal"
+            >
               <p className="py-2">
                 We have been a staffing agency for many years and match supply
                 and demand the traditional way.
@@ -66,43 +81,48 @@ const Home = () => {
                 your individual qualifications.
               </p>
             </div>
-            <button className=" py-2 px-2 bg-blue-700 text-white transition duration-500 rounded-md font-bold">
+            <button
+              data-aos="slide-up"
+              data-aos-duration="2000"
+              className=" py-2 px-2 bg-blue-700 text-white transition duration-500 rounded-md font-bold"
+            >
               About Us
             </button>
           </div>
 
           {/* bg content */}
-          <div className="">
+          <div data-aos="flip-up" data-aos-duration="3000" className="">
             <Slides />
           </div>
-          {/* <div className="mt-5 md:mt-0">
-            <img src={contentbg} className=" rounded-2xl h-96 w-full" />
-          </div> */}
         </div>
       </div>
 
       {/* jobs listing */}
 
-      <div className="bg-gray-300 py-20 px-1">
+      <div
+        data-aos="flip-up"
+        data-aos-duration="2000"
+        className="bg-gray-200 py-20 px-1"
+      >
         <Jobpost className="py-10" />
       </div>
 
       {/* icon-links */}
       <div className=" py-10 ">
         <div className=" max-w-7xl mx-auto content grid md:grid-cols-4  text-center justify-items-center text-xl py-10 ">
-          <div className="my-4 ">
+          <div data-aos="zoom-out" data-aos-duration="2000" className="my-4 ">
             <img src={jobseekers} className="" />
             <p>Jobseekers</p>
           </div>
-          <div className=" my-4">
+          <div data-aos="zoom-out" data-aos-duration="2000" className=" my-4">
             <img src={employers} className="" />
             <p>Employers</p>
           </div>
-          <div className="my-4">
+          <div data-aos="zoom-out" data-aos-duration="2000" className="my-4">
             <img src={news} className="" />
             <p>News</p>
           </div>
-          <div className=" my-4">
+          <div data-aos="zoom-out" data-aos-duration="2000" className=" my-4">
             <img src={contact} className="" />
             <p>Contact Us</p>
           </div>

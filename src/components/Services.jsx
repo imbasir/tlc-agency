@@ -29,11 +29,19 @@ const Services = () => {
       {/* content services */}
       <div className="max-w-7xl mx-auto w-100% ">
         <div className="text-start ml-2  py-20">
-          <div className="font-bold text-3xl md:text-5xl mb-10">
+          <div
+            data-aos="zoom-out"
+            data-aos-duration="2000"
+            className="font-bold text-3xl md:text-5xl mb-10"
+          >
             <h1>TLC Staffing Agency</h1>
           </div>
           <div>
-            <p className="max-[479px]:text-sm">
+            <p
+              data-aos="slide-up"
+              data-aos-duration="2000"
+              className="max-[479px]:text-sm"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               accusamus placeat saepe, magni aspernatur deleniti repudiandae
               odit exercitationem quas possimus doloremque ex rem inventore
@@ -52,7 +60,11 @@ const Services = () => {
 
         {/* Featured content */}
         <div className="py-12">
-          <div className="md:text-center">
+          <div
+            data-aos="zoom-out"
+            data-aos-duration="2000"
+            className="md:text-center"
+          >
             <h1 className="text-xl font-bold text-blue-600">FEATURED</h1>
             <h1 className="font-bold text-3xl md:text-5xl pb-7 ">
               The industries covered <br />
@@ -62,7 +74,11 @@ const Services = () => {
 
           {/* Listing jobs */}
           <div className="border grid md:grid-cols-2 lg:grid-cols-3 justify-items-center ">
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4">
+            <div
+              data-aos="flip-down"
+              data-aos-duration="2000"
+              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4"
+            >
               <a href="#">
                 <img className="rounded-t-lg" src={Automotive} alt="" />
               </a>
@@ -85,7 +101,11 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4">
+            <div
+              data-aos="flip-down"
+              data-aos-duration="2000"
+              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4"
+            >
               <a href="#">
                 <img className="rounded-t-lg" src={Admin} alt="" />
               </a>
@@ -108,7 +128,11 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4">
+            <div
+              data-aos="flip-down"
+              data-aos-duration="2000"
+              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4"
+            >
               <a href="#">
                 <img className="rounded-t-lg" src={Hospitality} alt="" />
               </a>
@@ -131,7 +155,11 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4">
+            <div
+              data-aos="flip-down"
+              data-aos-duration="2000"
+              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4"
+            >
               <a href="#">
                 <img className="rounded-t-lg" src={Healthcare} alt="" />
               </a>
@@ -154,7 +182,11 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="max-w-sm  bg-white border border-gray-200 rounded-lg shadow  my-4">
+            <div
+              data-aos="flip-down"
+              data-aos-duration="2000"
+              className="max-w-sm  bg-white border border-gray-200 rounded-lg shadow  my-4"
+            >
               <a href="#">
                 <img
                   className="rounded-t-lg h-[255px] w-100%"
@@ -181,7 +213,11 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4">
+            <div
+              data-aos="flip-down"
+              data-aos-duration="2000"
+              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4"
+            >
               <a href="#">
                 <img className="rounded-t-lg" src={Retail} alt="" />
               </a>

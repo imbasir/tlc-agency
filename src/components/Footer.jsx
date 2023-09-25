@@ -12,34 +12,42 @@ const Footer = () => {
         <div className="row  px-5 md:grid grid-cols-3">
           {/* Company Links */}
 
-          <div className="col py-3 px-1 mx-auto">
+          <div
+            data-aos="flip-up"
+            data-aos-duration="2000"
+            className="col py-3 px-1 mx-auto"
+          >
             <h4 className="font-bold text-md">Company</h4>
-            <ul>
-              <li>
+            <div>
+              <div>
                 <a href="#" className="text-sm ">
                   Home
                 </a>
-              </li>
-              <li>
+              </div>
+              <div>
                 <a href="#" className="text-sm ">
                   About Us
                 </a>
-              </li>
-              <li>
+              </div>
+              <div>
                 <a href="#" className="text-sm ">
                   Jobseekers
                 </a>
-                <li>
+                <div>
                   <a href="#" className="text-sm ">
                     Employers
                   </a>
-                </li>
-              </li>
-            </ul>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Company Details */}
-          <div className="col  py-3 px-1 mx-auto ">
+          <div
+            data-aos="flip-up"
+            data-aos-duration="2000"
+            className="col  py-3 px-1 mx-auto "
+          >
             <h4 className="font-bold text-md">Contact Us</h4>
             <ul className="">
               <li className="">
@@ -67,7 +75,11 @@ const Footer = () => {
           </div>
 
           {/* Social Links */}
-          <div className="col  py-3 px-1 mx-auto ">
+          <div
+            data-aos="flip-up"
+            data-aos-duration="2000"
+            className="col  py-3 px-1 mx-auto "
+          >
             <h4 className="font-bold text-md">Follow Us</h4>
             <ul className="flex space-x-3 mt-1 ">
               <li className="border bg-white rounded-3xl p-2">
