@@ -18,7 +18,7 @@ const Home = () => {
   };
 
   return (
-    <div id="logo" className="">
+    <div id="logo" className="overflow-hidden">
       <div className="py-12 ">
         {/* background  */}
         <div

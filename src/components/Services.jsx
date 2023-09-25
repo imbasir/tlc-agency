@@ -14,7 +14,7 @@ const Services = () => {
   };
 
   return (
-    <div id="logo" className="">
+    <div id="logo" className="w-screen overflow-hidden">
       <div className="py-20  ">
         {/* background  */}
         <div
@@ -75,7 +75,7 @@ const Services = () => {
           {/* Listing jobs */}
           <div className="border grid md:grid-cols-2 lg:grid-cols-3 justify-items-center ">
             <div
-              data-aos="flip-down"
+              data-aos="fade-down"
               data-aos-duration="2000"
               className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4"
             >
@@ -102,7 +102,7 @@ const Services = () => {
             </div>
 
             <div
-              data-aos="flip-down"
+              data-aos="fade-down"
               data-aos-duration="2000"
               className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4"
             >
@@ -129,7 +129,7 @@ const Services = () => {
             </div>
 
             <div
-              data-aos="flip-down"
+              data-aos="fade-down"
               data-aos-duration="2000"
               className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4"
             >
@@ -156,7 +156,7 @@ const Services = () => {
             </div>
 
             <div
-              data-aos="flip-down"
+              data-aos="fade-down"
               data-aos-duration="2000"
               className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4"
             >
@@ -183,7 +183,7 @@ const Services = () => {
             </div>
 
             <div
-              data-aos="flip-down"
+              data-aos="fade-down"
               data-aos-duration="2000"
               className="max-w-sm  bg-white border border-gray-200 rounded-lg shadow  my-4"
             >
@@ -214,7 +214,7 @@ const Services = () => {
             </div>
 
             <div
-              data-aos="flip-down"
+              data-aos="fade-down"
               data-aos-duration="2000"
               className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  my-4"
             >
