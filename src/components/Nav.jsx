@@ -7,10 +7,10 @@ import company from "../assets/images/company.png";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 
-  /*   const Logo = {
-    backgroundImage: `url(${company})`,
-  }; */
   return (
     <div>
       {/*  navbar goes here */}
@@ -36,17 +36,30 @@ const Navbar = () => {
             {/* Secondary nav */}
 
             <div className="px-3 hidden text-blue-600 md:flex items-center space-x-8">
-              <Link to="/" className="py-5 px-3 text-normal font-bold">
+              <Link
+                to="/"
+                onClick={scrollToTop}
+                className="py-5 px-3 text-normal font-bold"
+              >
                 Home
               </Link>
-              <Link to="/about" className="py-5 px-3 text-normal font-bold">
+              <Link
+                to="/about"
+                onClick={scrollToTop}
+                className="py-5 px-3 text-normal font-bold"
+              >
                 About
               </Link>
-              <Link to="/services" className="py-5 px-3 text-normal font-bold">
+              <Link
+                to="/services"
+                onClick={scrollToTop}
+                className="py-5 px-3 text-normal font-bold"
+              >
                 Services
               </Link>
               <Link
                 to="/contact"
+                onClick={scrollToTop}
                 className="py-2 px-3 bg-gray-700 hover:bg-blue-700 text-white transition duration-500 rounded-full font-bold"
               >
                 Contact us
@@ -74,6 +87,7 @@ const Navbar = () => {
         >
           <Link
             to="/"
+            onClick={scrollToTop}
             /* onClick={() => (this.setNavbarOpen = false)} */
             className="font-bold block py-5 px-4 text-sm hover:bg-gray-200"
           >
@@ -81,6 +95,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/about"
+            onClick={scrollToTop}
             /* onClick={() => (this.setNavbarOpen = false)} */
             className="font-bold block py-5 px-4 text-sm hover:bg-gray-200"
           >
@@ -88,6 +103,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/services"
+            onClick={scrollToTop}
             /* onClick={() => (this.setNavbarOpen = false)} */
             className="font-bold block py-5 px-4 text-sm hover:bg-gray-200"
           >
@@ -95,6 +111,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/contact"
+            onClick={scrollToTop}
             /* onClick={() => (this.setNavbarOpen = false)} */
             className="font-bold block py-5 px-4 text-sm hover:bg-gray-200"
           >
